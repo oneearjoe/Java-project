@@ -6,6 +6,7 @@ public class InsertionSort {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Input array size");
+        //аналогичная проверка на валидность инпута (как в ArraySearch)
         int a = in.nextInt();
         int[] array = new int[a];
 
