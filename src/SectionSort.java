@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class SectionSort {
-    public static void main(String[] args) {
+    public static void sectionSort() {
         Scanner in = new Scanner(System.in);
         System.out.println("Input array size");
         int a = in.nextInt();

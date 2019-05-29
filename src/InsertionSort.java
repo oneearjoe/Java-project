@@ -3,11 +3,20 @@ import java.util.Scanner;
 
 public class InsertionSort {
 
-    public static void main(String[] args) {
+    public static void insertionSort() {
         Scanner in = new Scanner(System.in);
         System.out.println("Input array size");
         //аналогичная проверка на валидность инпута (как в ArraySearch)
-        int a = in.nextInt();
+        //int a = in.nextInt();
+        int a;
+        do {
+            System.out.println("Please enter a positive number between 1 and 256");
+            while (!in.hasNextInt()){
+                System.out.println(String.format("Cannot parse to Integer value.\nPlease repeat input"));
+                in.next();
+            }
+            a=in.nextInt();
+        }while (a <= 0 || a > 256);
         int[] array = new int[a];
 
         for (int i = 0; i < a; i++) {

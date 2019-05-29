@@ -16,7 +16,16 @@ public class HelloWorld {
             System.out.println("Numbers are equal");
         }
 
+        byte asd = 20;
 
+        int qwe = 2;
+
+        qwe = asd;
+
+        asd = (byte)qwe;
+
+        //AbstractClass abs = new MyClass();
+        //abs.method1();;
         if (a<b){
             System.out.println("The lowest number is " + a);
 
@@ -25,6 +34,12 @@ public class HelloWorld {
 
         }
 
+
     }
 
-}
+
+
+
+
+
+    }

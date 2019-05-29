@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class BubbleSort {
-    public  static void main (String[] args) {
+    public  static void bubbleSort () {
         Scanner in = new Scanner(System.in);
         System.out.println("Input array size");
         int a = in.nextInt();

@@ -14,17 +14,24 @@ public class Main {
 //         //ты также можешь использовать нахождение минимума через 1 метод 2 раза, т.е первый раз передаешь туда первые 2 аргумента, а 2 раз результат от работы 1 метода и 3 аргумент
 //      }
 //      //аналогично, 3 метод. Он должен использовать 2 метод и принимать 4 аргумента в кач-ве параметров. Можешь их вводить, можешь рандомить
+
+
       Min1 minNumb = new Min1();
-      Min2 minNumb2 = new Min2();
-      Min3 minNumb3 = new Min3();
+      minNumb.getMinimum(15, 77, 24, 99);
 
-      System.out.println("The first iteration");
-      minNumb.lowestNumb();
+      ArraySearch arraySearch = new ArraySearch();
+      arraySearch.arraySearch();
 
-      System.out.println("The second iteration");
-      minNumb2.lowestNumb();
+      BubbleSort bubbleSort = new BubbleSort();
+      bubbleSort.bubbleSort();
 
-      System.out.println("The third iteration");
-      minNumb3.lowestNumb();
+      InsertionSort insertionSort = new InsertionSort();
+      insertionSort.insertionSort();
+
+      SectionSort sectionSort = new SectionSort();
+      sectionSort.sectionSort();
+
+
+
    }
 }

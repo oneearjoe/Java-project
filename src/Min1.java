@@ -1,15 +1,37 @@
 public class Min1 {
 
 
-    int lowestNumb ()
+    public static int getMin1 (int a, int b)
     {
-        int a= (int)( Math.random()*10);
-        int b= (int)( Math.random()*10);
         if (a<b){
-            System.out.println("Minimum in the first iteration is " + a);
             return a;
         } else {
-            System.out.println("Minimum in the first iteration is " + b);
+            return b;
+        }
+    }
+
+    public static int getMin2 (int a, int b, int c)
+    {
+        b= getMin1(b,c);
+
+        if (a<b){
+            return a;
+        } else {
+            return b;
+        }
+
+    }
+
+
+    public static int getMinimum (int a, int b, int c, int d)
+    {
+
+        b= getMin2(b, c, d);
+        if (a<b){
+            System.out.println("Minimum = " + a);
+            return a;
+        } else {
+            System.out.println("Minimum = " + b);
             return b;
         }
 

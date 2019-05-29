@@ -1,5 +1,5 @@
 public class Min3 {
-    int lowestNumb ()
+/*    int lowestNumb ()
     {
 
         Min2 min = new Min2();
@@ -13,5 +13,5 @@ public class Min3 {
             return b;
         }
 
-    }
+    }*/
 }
