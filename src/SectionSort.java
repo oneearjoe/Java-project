@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class SectionSort {
     public static void sectionSort() {
         Scanner in = new Scanner(System.in);
-        System.out.println("Input array size");
+        System.out.println("Input array size"); //проверка на инпут
         int a = in.nextInt();
         int[] array = new int[a];
 
         for (int i = 0; i < a; i++) {
-            array[i] = (int) (Math.random() * 100);
+            array[i] = (int) (Math.random() * 100); //рандом
         }
         System.out.println(Arrays.toString(array));
 

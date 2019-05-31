@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class BubbleSort {
     public  static void bubbleSort () {
         Scanner in = new Scanner(System.in);
-        System.out.println("Input array size");
+        System.out.println("Input array size"); // Тут тоже будет хорошо проверять на инпут, как ты делал в других заданиях
         int a = in.nextInt();
         int[] array = new int[a];
 
         for (int i = 0; i < a; i++) {
-            array[i] = (int) (Math.random() * 100);
+            array[i] = (int) (Math.random() * 100); //и тут поменять на new Random()...
         }
         System.out.println(Arrays.toString(array));
 
